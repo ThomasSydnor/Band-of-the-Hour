@@ -87,7 +87,7 @@ public class BandOfTheHour {
 
         System.out.println("Please enter weight (45.0 to 200.0)");
         double weight = keyboard.nextDouble();
-        while (weight <= 45.0 || weight >= 200.0){
+        while (weight < 45.0 || weight > 200.0){
             System.out.println("ERROR: Out of range, try again : ");
             weight = keyboard.nextDouble();
         }//end of weight verification
